@@ -1,0 +1,305 @@
+/* Font Injection by FontSquirrel */
+
+@font-face {
+    font-family: 'rubiklight';
+    src: url('../fonts/rubik-light-webfont.woff2') format('woff2'),
+        url('../fonts/rubik-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubikregular';
+    src: url('../fonts/rubik-regular-webfont.woff2') format('woff2'),
+        url('../fonts/rubik-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Landing Page */
+
+.landing {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 36px 18px;
+    background-color: #fcfcfc;
+    gap: 16px;
+}
+
+.landing>.landing-header {
+    font-family: 'rubikregular';
+    font-size: 28px;
+}
+
+.landing-para,
+.signin-para {
+    font-family: 'rubiklight';
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 80%;
+    color: #939597;
+    padding-bottom: 6px;
+    letter-spacing: 0.4px;
+}
+
+.landing-action-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.landing-action-btns>button,
+.signin-form>button,
+.create>button {
+    font-family: 'rubikregular';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 14px 0;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.landing-action-btns>button:nth-of-type(1) {
+    background-color: #6C25FF;
+    color: white;
+}
+
+.landing-action-btns>button:nth-of-type(2) {
+    background-color: #CEBAFB;
+    color: black;
+}
+
+/* Sign In Page */
+
+.sign-in,
+.create {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 36px 18px;
+    background-color: #fcfcfc;
+    gap: 16px;
+    font-family: 'rubiklight';
+}
+
+.signin-header,
+.create-header {
+    font-family: 'rubikregular';
+    font-size: 28px;
+    max-width: 80%;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+.create-header {
+    max-width: 70%;
+}
+
+.signin-form div input,
+.create-form>div>input,
+.signin-form button,
+.create-form button {
+    width: 100%;
+}
+
+.signin-form div {
+    margin-bottom: 4px;
+}
+
+.create-form div {
+    margin-bottom: 10px;
+}
+
+.signin-form,
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signin-form div,
+.create-form div {
+    position: relative;
+}
+
+.signin-form div input,
+.create-form>div>input {
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #b4b4b4;
+    margin-bottom: 6px;
+    outline: none;
+    width: 100%;
+    background-color: #fff;
+}
+
+.signin-form div input::placeholder,
+.create-form div input::placeholder {
+    color: #808080;
+    font-family: 'rubiklight';
+}
+
+.signin-form div label,
+.create-form>div>label {
+    position: absolute;
+    top: -18%;
+    left: 15px;
+    background-color: white;
+    color: #6C25FF;
+    font-weight: 600;
+    padding: 0 10px 0 2px;
+    font-size: 0.8rem;
+}
+
+.signin-form>button,
+.create>button {
+    background-color: #6C25FF;
+    color: white;
+}
+
+.signin-form>button:disabled,
+.create>button:disabled {
+    color: white;
+    background-color: #CBCBCB;
+}
+
+/* Create Page */
+
+.create {
+    justify-content: space-between;
+}
+
+.create>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.create>h1 {
+    margin-bottom: 10px;
+}
+
+.create-form>div>label>span,
+.agency-option>legend>span {
+    font-size: 12px;
+    color: red;
+}
+
+.agency-option legend {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.agency-option div>label {
+    font-family: 'rubikregular';
+    padding-inline: 10px;
+    font-size: 14px;
+}
+
+.agency-option-block {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.agency-option-block>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Setting Page */
+
+.setting {
+    font-family: 'rubikregular';
+}
+
+.setting>p {
+    font-family: 'rubiklight';
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+    padding: 22px 14px;
+}
+
+.setting-profile-img>span {
+    background-color: #6C25FF;
+    border-radius: 50%;
+    padding: 2px 4px 0px 4px;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+}
+
+.setting-profile-img>span>img {
+    width: 12px;
+}
+
+.setting-profile-img>img {
+    position: relative;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.setting-profile {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    background-color: #F7F8F9;
+    padding-block: 14px;
+    padding-left: 10px;
+}
+
+.setting-profile-info {
+    margin-top: 10px;
+}
+
+.setting-profile-info>p {
+    font-size: 14px;
+}
+
+.setting-profile-info>p:nth-of-type(1) {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.setting-para {
+    font-family: 'rubikregular';
+    padding-bottom: 14px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    padding-inline: 20px;
+    background-color: #F7F8F9;
+}
+
+.setting-line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 52vh;
+    background-color: #F7F8F9;
+}
+
+.setting-line>p:nth-of-type(1) {
+    border-top: 2px dashed #dfdfdf;
+    color: transparent;
+}
+
+.setting-line>p:nth-of-type(2) {
+    border-top: 2px dashed #dfdfdf;
+}
+
+.setting-block {
+    background-color: #F7F8F9;
+    height: 80vh;
+}
